@@ -1,0 +1,600 @@
+.App {
+  width: 100%;
+  height: 100vh;
+  /* background: "#E6DACE"; */
+  background-color: #E6DACE;
+}
+
+.demo {
+  flex-direction: row;
+}
+
+.custom-nav-style {
+  border: 2px solid red;
+}
+
+/* common------------------------- */
+#basecontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+  width: 100%;
+  padding-bottom: 20px;
+  background-color: #E6DACE;
+}
+
+p {
+  color: rgb(41, 41, 41);
+  font-weight: 100;
+}
+
+::placeholder {
+  color: #ffe6ce;
+}
+
+/* header______________________________________________________ */
+.headerCountainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: #fff;
+  z-index: 10;
+  position: fixed;
+  width: 100%;
+  min-height: 100px;
+  /* background-color: red; */
+  z-index: 999;
+
+}
+
+.menuContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.logoContainer {
+  font-weight: 700;
+}
+
+.menuItems {
+  padding: 0.8rem;
+  margin: 0.3;
+  font-weight: 100;
+  text-transform: uppercase;
+  font-size: 1rem;
+  text-decoration: none;
+  color: #000;
+}
+
+.activeMenuItems {
+  padding: 0.8rem;
+  margin: 0.3;
+  font-weight: 100;
+  text-transform: uppercase;
+  font-size: 1rem;
+  text-decoration: none;
+  color: #c5905a
+}
+
+/* about or home page ------------------------------------------ */
+.aboutCountainer {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #E6DACE;
+  /* position: relative; */
+}
+
+.absolutebg {
+  position: absolute;
+  background-color: #fff;
+  height: 100vh;
+  width: 10%;
+  right: 0;
+  top: 0;
+}
+
+.mainView {
+  z-index: 10;
+  display: flex;
+  flex-direction: row;
+  margin-top: 70px;
+}
+
+.userImageContainer {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.userImage {
+  width: 200px;
+}
+
+.leftView {
+  width: 400px;
+  /* background-color: #f5ece1; */
+  background-color: #e6dace;
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: -20px 20px 40px #0003;
+}
+
+.rightView {
+  width: 400px;
+  padding-left: 30px;
+}
+
+.socialIconContainer {
+  width: 100%;
+  height: 50px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hr {
+  width: 100px;
+}
+
+.hello {
+  font-size: 4.5rem;
+  /* line-height: 1rem; */
+}
+
+.subline {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.home_btn_container {
+  margin: 30px 0;
+}
+
+button {
+  background-color: #6241f3;
+  padding: 5px 25px;
+  /* border-radius: 50px; */
+  margin-right: 10px;
+  outline: none;
+  border: 1px solid #6241f3;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+button:hover {
+  background-color: #fff;
+  border: 1px solid #000;
+  color: #000;
+  transition: 0.5s;
+}
+
+.iconBox {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.role {
+  margin-top: 20px;
+  font-size: 19px;
+}
+
+.skills {
+  font-family: 'Courier Prime', monospace;
+  font-size: 10px;
+  margin-bottom: 30px;
+}
+
+/* footer -------------------------------------------------------------- */
+.footercontainer {
+  flex-direction: row;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: #fff;
+}
+
+.copyright {
+
+  font-family: 'Courier Prime', monospace;
+  margin: 0px;
+  font-size: 12px;
+
+}
+
+.footerright {
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+}
+
+.footerHeading {
+  font-family: 'Courier Prime', monospace;
+  margin: 0px;
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.footer_icons {
+  display: flex;
+  flex-direction: column;
+}
+
+/* resume ---------------------------------------------------------------------- */
+/* .ResumeCountainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 150px;
+  width: 100%;
+  padding-bottom: 20px;
+   background-color: #e6dace;
+  background-color: #000;
+} */
+
+.mainViewForResume {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.resume {
+  font-size: 35px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.btnContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin-bottom: 20px;
+}
+
+.Experience {
+  color: #6241f3;
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.experienceContainer {
+  width: 90%;
+  background-color: #fff;
+  padding: 70px 50px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 100px;
+  box-shadow: -20px 20px 30px #0002;
+  position: relative;
+  overflow: hidden;
+}
+
+.experienceContainer_d_f-r {
+  flex-direction: row;
+}
+
+.experienceContainer_d_f-c {
+  flex-direction: column;
+}
+
+.skill__title {
+  font-size: 18px;
+}
+
+.skill_list_container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.skill_tx_box {
+  width: 33%;
+  position: relative;
+}
+
+.skill_tx {
+  font-size: 14px;
+  margin: 0 0 0 20px;
+}
+
+.skill_tx::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 0px;
+  width: 10px;
+  height: 10px;
+  background-color: #6241f3;
+}
+
+.company-logo-on-card {
+  position: absolute;
+  max-width: 60%;
+  max-height: 60%;
+  opacity: 0.1;
+  /* z-index: -10; */
+}
+
+.ComponyInfo {
+  width: 40%;
+}
+
+.RoleInfo {
+  width: 55%;
+}
+
+.normal_text {
+  font-size: 14px;
+}
+
+.card_header {
+  font-size: 1.5rem;
+}
+
+.position {
+  font-size: 16px;
+}
+
+.CommonBoxCompMainView {
+  width: 90%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 100px;
+  box-shadow: -20px 20px 30px #0002;
+}
+
+/* -------------------------------project page ------------------------------------- */
+.project_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  position: relative;
+}
+
+.project_container_left_view {
+  width: 60%
+}
+
+.project_container_right_view {
+  width: 40%
+}
+
+.project_headline {
+  border-left: 0.4rem solid;
+  margin-top: 2rem;
+  padding: 0 1.6rem;
+}
+
+.project_title {
+  color: #ffc78e
+}
+
+.project_role {
+  font-weight: 500;
+  color: #000
+}
+
+.action_Container {
+  padding: 0 2rem;
+  margin-bottom: 1.5rem;
+  
+}
+
+.action_btn {
+  padding: 5px 15px;
+  background-color: #6241f3;
+  color: #fff;
+  border: 1px solid #6241f3;
+  text-decoration: none;
+}
+
+.action_btn:nth-child(1) {
+  margin-right: 10px;
+}
+
+.action_btn:hover {
+  background-color: #fff;
+}
+
+@media only screen and (min-width: 600px) {
+
+  /* ------------------------------------------------home or about page ------------------------------------------------------ */
+  .absolutebg {
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+
+  /* ------------------------------------------------home or about page ------------------------------------------------------ */
+  .absolutebg {
+    width: 95%;
+  }
+
+  .aboutCountainer {
+    background-color: #fff;
+  }
+
+  .mainView {
+    flex-direction: column;
+    margin-top: 120px;
+    width: 90%;
+    margin-bottom: 70px;
+  }
+
+  .userImageContainer {
+    width: 150px;
+    height: 150px;
+  }
+
+  .userImage {
+    width: 150px;
+  }
+
+  .leftView {
+    width: 100%;
+  }
+
+  .rightView {
+    width: 100%;
+    margin-top: 20px;
+    padding-right: 30px;
+  }
+
+  .hello {
+    font-size: 3rem;
+  }
+
+  .hr {
+    margin: 0;
+  }
+
+  button {
+    margin-right: 0;
+  }
+
+  .home_btn_container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  /*------------------ footer styles  --------------------------------------*/
+  .footercontainer {
+    flex-direction: column;
+    border-top: 1px solid #f5ece1;
+  }
+
+  .footerright {
+    flex-direction: column;
+  }
+
+  .footer_icons {
+    display: none;
+  }
+
+  .footerHeading {
+    margin-bottom: 0px;
+    margin-top: 10px;
+  }
+
+  /*----------------------- resume view style ------------------------ */
+  .mainViewForResume {
+    width: 90%;
+  }
+
+  .resume {
+    font-size: 25px;
+  }
+
+  .Experience {
+    font-size: 20px;
+  }
+
+  .btnContainer {
+    width: 100%;
+  }
+
+  .experienceContainer {
+    width: 100%;
+    padding: 30px;
+  }
+
+  .experienceContainer_d_f-r {
+    flex-direction: column;
+  }
+
+
+  .skillContainer {
+    width: 100%;
+    padding: 30px;
+  }
+
+  .ComponyInfo {
+    width: 100%;
+  }
+
+  .card_header {
+    font-size: 16px;
+    margin: 0;
+  }
+
+  .position {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin: 0;
+  }
+
+  .normal_text {
+    margin: 0;
+  }
+
+  .RoleInfo {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .skill_tx_box {
+    width: 50%;
+  }
+
+  /* -------------------------------project page ------------------------------------- */
+  .project_container {
+    flex-direction: column;
+  }
+
+  .project_container_left_view {
+    margin-top: 405px;
+    width: 100%;
+    z-index: 1;
+  }
+
+  .project_container_right_view {
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    z-index: 0;
+  }
+
+  .project_headline {
+    border-left: 0rem solid;
+    margin-top: 0rem;
+    padding: 15px 1.6rem 0px 1.6rem;
+    border-bottom: 1px solid #000;
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+  }
+  .project_role {
+    color: #fff
+  }
+  
+}
